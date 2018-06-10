@@ -20,8 +20,19 @@ public class Card {
 
     public String GetDescription() {
 
+        char[] arrayFigura = figura.toString().toLowerCase().toCharArray();
 
-        return figura + " - " +  kolor;
+        arrayFigura[0] = Character.toUpperCase(arrayFigura[0]);
+
+        String figuraString = new String( arrayFigura );
+
+        char[] arrayKolor = kolor.toString().toLowerCase().toCharArray();
+
+        arrayKolor[0] = Character.toUpperCase(arrayKolor[0]);
+
+        String kolorString = new String( arrayKolor );
+
+        return figuraString + " - " +  kolorString;
 
     }
 }
