@@ -25,7 +25,7 @@ public class Cards {
 
 
 ////////
-        System.out.println("Podaj figura ( ACE lub KING lub QUEEN lub JACK): ");
+        System.out.println("Podaj figura ( ACE lub KING lub QUEEN lub JACK ): " );
 // do
         Ranks inputRanks = Ranks.valueOf(readFigua.next().toUpperCase());
 // whie brak błędu
@@ -33,7 +33,7 @@ public class Cards {
         karta.setFigura(inputRanks);
 ////////
 
-        System.out.println("Podaj kolor ( CLUBS lub DIAMONDS lub HEARTS lub SPADES): ");
+        System.out.println("Podaj kolor ( CLUBS lub DIAMONDS lub HEARTS lub SPADES ): ");
 // do
         Suits inputSuits = Suits.valueOf(readKolor.next().toUpperCase());
 // while brak błędu
